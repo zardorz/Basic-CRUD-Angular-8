@@ -1,5 +1,5 @@
 # Basic-CRUD-Angular-8-NetCore-JWt-API
-Simple application, without further validation, to exemplify the use of a CRUD in Anlgular 8 with NetCore API using JWT and session control via database
+Simple application, without further validation, to exemplify the use of a CRUD in Angular 8 with NetCore API using JWT and session control via database
 
 ## Instalation
 1. Clone or download the application
