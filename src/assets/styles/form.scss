@@ -1,0 +1,78 @@
+/* Form Style's */
+
+.form-label {
+    color: #044877;    
+}
+
+.form-input,
+.form-label {
+   display: block;
+}
+
+.form-input {
+    width: 241.83px;
+    height: 25.33px;
+    font-size: 13.33px;
+}
+
+.form-input-container {
+    margin-top: 1em;
+}
+
+/* Form Flex Style's */
+.form-flex-container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.form-flex-item {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 5px;
+}
+
+@media all and (max-width: 900px) {
+
+    .form-flex-container {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    
+    .form-flex-item {
+        flex: 0 0 calc(50% - 10px);
+        margin-right: 5px;
+    }
+
+}
+
+@media all and (max-width: 450px) { 
+
+    .form-flex-container {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    
+    .form-flex-item {
+        flex: 0 0 calc(100% - 10px);
+        margin-right: 5px;
+    }
+
+}
+
+/* Form without flexbox */
+
+.form-text-fullwidth {
+    width: calc(241.83px * 2);
+    display: block;
+}
+
+.form-container-fullwidth {
+    width: 241.83px;
+}
+
+.form-text-input-fullwidth {
+    width: 100%;
+}
+
+.form-textarea-doubleheight {
+    height: 6em !important;
+}

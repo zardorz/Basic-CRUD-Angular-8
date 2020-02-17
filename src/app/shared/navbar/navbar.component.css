@@ -1,0 +1,17 @@
+*{
+    color: white;
+}
+
+.navbar {
+    background-color: black !important;
+    z-index: 101 !important;
+    height: 60px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.navbar .nav-item {
+    border-left: .5px solid #4484c1 !important;
+    border-right: .5px solid #4484c1 !important;
+    text-align: right; 
+}

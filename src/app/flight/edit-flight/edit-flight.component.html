@@ -1,0 +1,29 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Alterar Trajeto</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nome do Trajeto</label>
+        <input type="text" formControlName="name"  name="name" class="form-control" id="name">
+      </div>
+  
+      <div class="form-group">
+        <label for="dateDeparture">Data/Hora da Partida:</label>
+        <input class="form-control" placeholder="yyyy-mm-ddThh:mm:ss" formControlName="dateDeparture"   name="dateDeparture" class="form-control" id="dateDeparture">
+      </div>
+  
+      <div class="form-group">
+        <label for="source">Origem:</label>
+        <input type="text"  formControlName="source"   name="source" class="form-control" id="source">
+      </div>
+   
+      <div class="form-group">
+        <label for="destiny">Destino:</label>
+        <input type="text" formControlName="destiny"   name="destiny" class="form-control" id="destiny">
+      </div>
+  
+      <button class="btn btn-success" >Salvar</button>
+      &nbsp;
+      <button class="btn btn-success" (click)="listFlight()">Voltar</button>
+    </form>
+  </div>
+ 

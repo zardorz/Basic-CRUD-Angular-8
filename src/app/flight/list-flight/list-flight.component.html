@@ -1,0 +1,30 @@
+<div class="col-md-12 user-container">
+    <h2 style="margin: auto"> Trajetos </h2>
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th style="display: none;">Id</th>
+        <th style="vertical-align: middle;">Nome</th>
+        <th style="vertical-align: middle;">Data/Hora de partida</th>
+        <th style="vertical-align: middle;">Origem</th>
+        <th style="vertical-align: middle;">Destino</th> 
+        <th class="justify-content-end" style="float: right;"><button class="btn btn-danger"  (click)="addFlight()"> <span class="fa fa-plus-circle fa-2x"></span> </button></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let flight of flights" >
+        <td style="display: none;">{{flight.id}}</td>
+        <td style="vertical-align: middle !important;">{{flight.name}}</td>
+        <td style="vertical-align: middle;">
+            {{flight.dateDeparture | date : 'dd/mm/yyyy HH:mm:ss' : 'pt-BR'  }}
+        </td>
+        <td style="vertical-align: middle;">{{flight.source}}</td>
+        <td style="vertical-align: middle;">{{flight.destiny}}</td> 
+        <td style="vertical-align: middle;float: right;" class="justify-content-end"><button class="btn btn-success" (click)="deleteFlight(flight)"> Delete</button>
+          <button class="btn btn-success" (click)="editFlight(flight)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
