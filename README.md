@@ -1,2 +1,20 @@
-# Basic-CRUD-Angluar-8-NetCore-JWt-API
+# Basic-CRUD-Angular-8-NetCore-JWt-API
 Simple application, without further validation, to exemplify the use of a CRUD in Anlgular 8 with NetCore API using JWT and session control via database
+
+## Instalation
+1. Clone or download the application
+
+2. API
+- Restore package dependnecies NutGet
+- build
+- Set "DefaultConnection": "Server=BAUER-PC\\SQLEXPRESS2017;" inside "appsettings.json" to yoyr Sql Server
+- Select "WebApi" projet and RUN (this API dont have any custom/swagger page)
+- Set Up DB runing in PMC of VS 2019 dotnet ef database update --context ApiDbContext
+- Finally run project
+
+3. Angular
+- npm install
+- set envimentens "apiProtected" and "apiOpen" to your API local adress 
+- ng serve --open
+
+If the both apps running withou erros you will be able list, add, edit and delete (CRUD) basic informations an store it's in the database. LogOut will "expire" session inside DB but attention. In this FIRRST version the API dont verify if still alive (to next updates ;))
