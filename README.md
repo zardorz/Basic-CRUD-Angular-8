@@ -10,3 +10,5 @@ Simple application, without further validation, to exemplify the use of a CRUD i
 
 
 The API is in https://github.com/zardorz/Basic-CRUD-API-JWT
+
+#Este repo é basicamente para POC's e testes em geral. Se tiver interesse em ver meus projetos reais envie um e-mail para webmaster@asgi.com.br explicando o motivo do acesso.
